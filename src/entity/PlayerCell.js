@@ -51,7 +51,7 @@ class PlayerCell extends Cell {
             this.setSize(Math.sqrt(this._radius2 + prey._radius2));
 
             // 🎨 Получение цвета с 10% шансом
-            if (mass > 10 && Math.random() < 0.1) {
+            if (mass > 10 && Math.random() < 0.01) {
                 const data = JSON.stringify({
                     steamid: steamid,
                     action: "pickup",
@@ -95,7 +95,7 @@ class PlayerCell extends Cell {
             }
 
             // 🧬 Получение скина с 1% шансом
-            if (mass > 50 && Math.random() < 0.1) {
+            if (mass > 50 && Math.random() < 0.001) {
                 const data = JSON.stringify({
                     steamid: steamid,
                     action: "pickup",
